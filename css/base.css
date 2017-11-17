@@ -13,6 +13,10 @@ h2 {
     font-size:18px;
 }
 
+a {
+    text-decoration:none;
+}
+
 header {
     background:#FEF0F7;
 }
@@ -66,7 +70,6 @@ footer nav ul li a {
     display:block;
     padding:12px;
     color:#333;
-    text-decoration:none;
 }
 
 footer p.top-anchor {
@@ -97,23 +100,32 @@ ul.items {
     padding:0;
     margin:0;
 }
-
 ul.items li {
     border-bottom:1px solid #ddd;
 }
-
+ul.items a {
+    display:table;
+    color:#333;
+    font-size:12px;
+    font-weight:bold;
+}
 ul.items div.img,
 ul.items div.info {
-    float:left;
+    display:table-cell;
 }
-
+ul.items div.img {
+    vertical-align: middle;
+}
+ul.items div.info {
+    width:100%;
+    padding:6px 6px 6px 0;
+}
 ul.items div.img img {
     margin:6px;
     vertical-align:bottom;
+    float:left;
+    width:90px;
 }
-
-ul.items li a:after {
-    content:"";
-    display:block;
-    clear:both;
+.price {
+    color:#cc0000;
 }
