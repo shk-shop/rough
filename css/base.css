@@ -26,8 +26,14 @@ a {
 .icon-home,
 .icon-item,
 .icon-mypage,
-.icon-cart {
+.icon-cart,
+.icon-ranking,
+.icon-pickup {
     fill:#4B4B4B;
+}
+
+.bg-base {
+    background:#FEF0F7;
 }
 
 header {
@@ -131,7 +137,7 @@ ul.items div.info {
     display:table-cell;
 }
 ul.items div.img {
-    vertical-align: middle;
+    vertical-align:middle;
 }
 ul.items div.info {
     width:100%;
@@ -144,7 +150,6 @@ ul.items div.img img {
     width:90px;
 }
 .price {
-    color:#cc0000;
 }
 
 .breadcrumb {
@@ -279,4 +284,32 @@ ul.items div.img img {
 .information .box span.title {
     font-weight:bold;
     width:30%;
+}
+
+.slider .item {
+    padding:12px 6px;
+}
+.slider .item a {
+    display:block;
+    font-size:12px;
+    color:#000;
+    padding:6px;
+}
+.slider .item .ranking {
+    text-align:center;
+}
+.slider .item div.img {
+    text-align:center;
+    margin-bottom:6px;
+}
+.slider .item div.img img {
+    display:inline;
+    vertical-align:bottom;
+    width:100%;
+}
+.slider .item div.info {
+
+}
+.slider .item div.info {
+    font-weight:bold;
 }
