@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>DETAIL</title>
+
     <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 </head>
 
 <body>
+<script>
+$(document).ready(function() {
+    $('.carousel').slick({
+        arrows:false,
+        dots:true,
+        infinite:true,
+        slidesToShow:1,
+        slidesToScroll:1,
+    });
+});
+</script>
     <header>
         <nav>
             <ul>
@@ -88,14 +105,21 @@
     <article>
         <section>
             <h2>商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名</h2>
-            <div class="package">
-                <img src="img/item.png">
+            <div class="carousel package">
                 <div class="thumbnail">
-                    <span></span>
-                    <span class="selected"></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <img src="img/item.png">
+                </div>
+                <div class="thumbnail">
+                    <img src="img/item.png">
+                </div>
+                <div class="thumbnail">
+                    <img src="img/item.png">
+                </div>
+                <div class="thumbnail">
+                    <img src="img/item.png">
+                </div>
+                <div class="thumbnail">
+                    <img src="img/item.png">
                 </div>
             </div>
 

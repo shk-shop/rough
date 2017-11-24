@@ -223,21 +223,9 @@ ul.items div.img img {
 .package img {
     vertical-align:bottom;
     width:90%;
+    margin:0 auto;
 }
 
-.thumbnail {
-    margin-top:12px;
-}
-.thumbnail span {
-    display:inline-block;
-    width:6px;
-    height:6px;
-    border-radius:3px;
-    background:#ccc;
-}
-.thumbnail span.selected {
-    background:#000;
-}
 
 .purchase {
     background:#FEF0F7;
@@ -303,12 +291,8 @@ ul.items div.img img {
     margin-bottom:6px;
 }
 .slider .item div.img img {
-    display:inline;
     vertical-align:bottom;
     width:100%;
-}
-.slider .item div.info {
-
 }
 .slider .item div.info {
     font-weight:bold;
