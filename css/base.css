@@ -10,9 +10,67 @@ a {
     color:#000;
 }
 
+h2 {
+    margin:0;
+    padding:0;
+    font-size:16px;
+}
+
+header {
+    background:#FF96CD;
+#    border-bottom:2px solid #f39;
+    margin-bottom:12px;
+}
+header div.logo {
+    float:left;
+    display:inline-block;
+    margin:4px 12px;
+    height:42px;
+}
+header div.logo a {
+    display:table-cell;
+    padding:0 12px;
+    height:42px;
+    vertical-align:middle;
+    background:#cfc;
+}
+header nav {
+    text-align:right;
+}
+header nav ul {
+    list-style:none;
+    padding:0;
+    margin:0 30px 0 0;
+}
+header nav ul li {
+    display:inline-block;
+    vertical-align:bottom;
+    margin:4px 12px;
+}
+header nav ul li a {
+    display:table-cell;
+    vertical-align:middle;
+    height:42px;
+}
+
+footer nav {
+    text-align:center;
+    border-top:2px solid #f39;
+    padding:12px 0 0 0;
+}
+footer nav ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+footer nav ul li {
+    display:inline-block;
+    margin:0 12px;
+    font-size:12px;
+}
 footer p.top-anchor {
     text-align:right;
-    padding-right:5%;
+    padding-right:2%;
     font-size:12px;
 }
 footer div.bottom {
@@ -27,17 +85,49 @@ footer p.copyright {
 }
 
 article {
+    display:flex;
 }
 article div.side-container {
-    background:#ccc;
-    float:left;
-    width:30%;
+    width:240px;
+}
+article div.side-container nav {
+    margin:0px 10px;
+}
+article div.side-container nav h2 {
+    border-bottom:3px solid #f39
+}
+article div.side-container nav ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+article div.side-container nav ul li {
+}
+article div.side-container nav ul li a {
+    background:#FEF0F7;
+    display:block;
+    padding:3px 6px;
+}
+article div.side-container nav ul li a:hover {
+    background:#fff;
+}
+article div.side-container nav ul li a:before {
+    content:"*";
+    margin-right:6px;
 }
 article div.main-container {
-    background:#cff;
-    float:left;
-    width:70%;
+    width:100%;
 }
+article div.main-container section {
+    margin:0 12px 30px 12px;
+}
+article div.main-container section h2 {
+    background:#f39;
+    border-radius:6px;
+    color:#fff;
+    padding:2px 6px;
+}
+
 article:after {
     content:"";
     display:block;
@@ -49,9 +139,9 @@ div.items {
     flex-wrap:wrap;
 }
 div.item {
-    border:1px solid #000;
     width:120px;
     margin:6px;
+    font-size:12px;
 }
 div.item div.img {
     margin:6px;
