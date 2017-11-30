@@ -87,31 +87,31 @@ footer p.copyright {
 article {
     display:flex;
 }
-article div.side-container {
+article div.left-container {
     width:240px;
 }
-article div.side-container nav {
+article div.left-container nav {
     margin:0px 10px;
 }
-article div.side-container nav h2 {
+article div.left-container nav h2 {
     border-bottom:3px solid #f39
 }
-article div.side-container nav ul {
+article div.left-container nav ul {
     list-style:none;
     padding:0;
     margin:0;
 }
-article div.side-container nav ul li {
+article div.left-container nav ul li {
 }
-article div.side-container nav ul li a {
+article div.left-container nav ul li a {
     background:#FEF0F7;
     display:block;
     padding:3px 6px;
 }
-article div.side-container nav ul li a:hover {
+article div.left-container nav ul li a:hover {
     background:#fff;
 }
-article div.side-container nav ul li a:before {
+article div.left-container nav ul li a:before {
     content:"*";
     margin-right:6px;
 }
