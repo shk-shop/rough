@@ -5,15 +5,21 @@ body {
     min-width:800px;
 }
 
-a {
-    text-decoration:none;
-    color:#000;
-}
-
 h2 {
     margin:0;
     padding:0;
     font-size:16px;
+}
+
+h3 {
+    padding:0;
+    margin:0;
+    font-size:16px;
+}
+
+a {
+    text-decoration:none;
+    color:#000;
 }
 
 header {
@@ -90,6 +96,9 @@ article {
 article div.left-container {
     width:240px;
 }
+article div.right-container {
+    width:240px;
+}
 article div.left-container nav {
     margin:0px 10px;
 }
@@ -140,7 +149,7 @@ div.items {
 }
 div.item {
     width:120px;
-    margin:6px;
+    margin:12px;
     font-size:12px;
 }
 div.item div.img {
@@ -155,4 +164,138 @@ div.item div.info {
 }
 div.item div.info a:hover {
     text-decoration:underline;
+}
+
+.breadcrumb {
+    border-bottom:3px solid #f39;
+    margin:0 12px;
+    font-size:16px;
+    font-weight:bold;
+    line-height:1.5;
+}
+
+.search-options {
+    margin:6px 12px;
+}
+.search-options div.sort {
+    margin-left:6px;
+}
+.search-options div.sort span:after {
+    content:" | ";
+    margin-left:2px;
+    font-size:12px;
+}
+.search-options div.sort span:last-child:after {
+    content:none;
+}
+.search-options div.sort span a {
+    color:#f39;
+    font-size:12px;
+}
+.search-options div.sort span.selected a {
+    color:#000;
+    font-weight:bold;
+}
+
+.pagenation {
+    text-align:center;
+    margin:3px 12px;
+}
+.pagenation span {
+    display:inline-block;
+}
+.pagenation span a {
+    display:block;
+    margin:0 2px 0 0;
+    padding:0 4px;
+    border:1px solid #f39;
+    background:#f39;
+    color:#fff;
+    min-width:22px;
+    font-size:12px;
+    line-height:1.5em;
+}
+.pagenation span a:hover {
+    background:#fff;
+    color:#f39;
+}
+.pagenation span.selected a {
+    background:#fff;
+    color:#000;
+    font-weight:bold;
+}
+.pagenation span p {
+    margin:0 2px 0 0;
+    padding:0 4px;
+    font-size:12px;
+    line-height:1.5em;
+}
+
+.package {
+    text-align:center;
+    margin:12px 0;
+}
+.package .main img {
+    vertical-align:bottom;
+    width:400px;
+    margin:0 auto;
+}
+.package .thumbnail {
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:12px;
+}
+.package .thumbnail img {
+    vertical-align:bottom;
+    width:60px;
+    margin:6px;
+    cursor:pointer;
+}
+
+
+.purchase {
+    padding:12px;
+}
+.purchase .price-info {
+    background:#fff;
+    border:1px solid #ccc;
+    margin-bottom:12px;
+    text-align:center;
+}
+.purchase .btn-cart {
+    background:linear-gradient(#AAD460, #82C116);
+    border-radius:6px;
+}
+.purchase .btn-cart a {
+    display:block;
+    color:#fff;
+    text-align:center;
+    line-height:30px;
+}
+
+
+.comment,
+.information {
+    margin:12px;
+    padding:6px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.comment p {
+    font-size:12px;
+}
+
+.information .box {
+    display:table;
+    width:100%;
+    margin:6px 0;
+}
+.information .box span {
+    display:table-cell;
+    font-size:12px;
+}
+.information .box span.title {
+    font-weight:bold;
+    width:30%;
 }
