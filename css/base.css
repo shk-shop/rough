@@ -22,6 +22,12 @@ a {
     color:#000;
 }
 
+ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
 header {
     background:#FF96CD;
 #    border-bottom:2px solid #f39;
@@ -44,8 +50,6 @@ header nav {
     text-align:right;
 }
 header nav ul {
-    list-style:none;
-    padding:0;
     margin:0 30px 0 0;
 }
 header nav ul li {
@@ -65,9 +69,6 @@ footer nav {
     padding:12px 0 0 0;
 }
 footer nav ul {
-    list-style:none;
-    padding:0;
-    margin:0;
 }
 footer nav ul li {
     display:inline-block;
@@ -106,9 +107,6 @@ article div.left-container nav h2 {
     border-bottom:3px solid #f39
 }
 article div.left-container nav ul {
-    list-style:none;
-    padding:0;
-    margin:0;
 }
 article div.left-container nav ul li {
 }
@@ -231,13 +229,23 @@ div.item div.info a:hover {
     line-height:1.5em;
 }
 
+.content-box {
+    margin:12px 0;
+    display:flex;
+}
+.content-box .left-box {
+    width:100%;
+}
+.content-box .right-box {
+    min-width:200px;
+}
+
 .package {
     text-align:center;
-    margin:12px 0;
 }
 .package .main img {
     vertical-align:bottom;
-    width:400px;
+    width:300px;
     margin:0 auto;
 }
 .package .thumbnail {
@@ -247,17 +255,17 @@ div.item div.info a:hover {
 }
 .package .thumbnail img {
     vertical-align:bottom;
-    width:60px;
+    width:40px;
     margin:6px;
     cursor:pointer;
 }
 
 
 .purchase {
+    border:1px solid #ccc;
     padding:12px;
 }
 .purchase .price-info {
-    background:#fff;
     border:1px solid #ccc;
     margin-bottom:12px;
     text-align:center;
@@ -271,6 +279,21 @@ div.item div.info a:hover {
     color:#fff;
     text-align:center;
     line-height:30px;
+}
+
+.sns {
+    margin:12px 0;
+}
+.sns ul {
+}
+.sns ul li {
+    display:inline-block;
+}
+.icon-twitter1 {
+    fill:#1DA1F2;
+}
+.icon-twitter2 {
+    fill:#FFFFFF;
 }
 
 
