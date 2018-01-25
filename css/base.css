@@ -30,7 +30,6 @@ ul {
 
 header {
     background:#FF96CD;
-#    border-bottom:2px solid #f39;
     margin-bottom:12px;
 }
 header div.logo {
@@ -263,14 +262,15 @@ div.item div.info a:hover {
 
 .purchase {
     border:1px solid #ccc;
+    border-radius:6px;
     padding:12px;
 }
 .purchase .price-info {
-    border:1px solid #ccc;
-    margin-bottom:12px;
-    text-align:center;
+}
+.purchase .purchase-option {
 }
 .purchase .btn-cart {
+    margin-top:6px;
     background:linear-gradient(#AAD460, #82C116);
     border-radius:6px;
 }

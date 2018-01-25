@@ -1,26 +1,33 @@
 body {
-    -webkit-text-size-adjust: 100%;
     font-family:Helvetica, san-serif;
-    padding:0;
     margin:0;
+    padding:0;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
 }
 
 h2 {
     background:linear-gradient(#FF79BC, #FD419D);
     color:#fff;
-    padding:12px;
-    margin:0;
     font-size:18px;
+    margin:0;
+    padding:12px;
 }
 
 h3 {
-    padding:0;
-    margin:0;
     font-size:16px;
+    margin:0;
+    padding:0;
 }
 
 a {
     text-decoration:none;
+}
+
+ul {
+    list-style:none;
+    margin:0;
+    padding:0;
 }
 
 .icon-home,
@@ -28,7 +35,8 @@ a {
 .icon-mypage,
 .icon-cart,
 .icon-ranking,
-.icon-pickup {
+.icon-pickup,
+.icon-menu {
     fill:#4B4B4B;
 }
 
@@ -36,44 +44,83 @@ a {
     background:#FEF0F7;
 }
 
-header {
+header.t1 {
     background:#FF96CD;
 }
-
-header nav {
+header.t1 nav {
     padding:10px 0;
 }
-header nav ul {
-    list-style:none;
-    display:table;
-    width:100%;
+header.t1 nav ul {
     border-collapse:separate;
     border-spacing:6px 0;
-    padding:0;
-    margin:0;
+    display:table;
+    width:100%;
 }
-header nav ul li {
-    display:table-cell;
-    width:25%;
-    height:60px;
+header.t1 nav ul li {
     background:linear-gradient(#FF79BC, #FD419D);
     border-radius:12px;
+    display:table-cell;
+    height:60px;
+    margin:0;
+    padding:6px;
     text-align:center;
     vertical-align:middle;
-    padding:6px;
-    margin:0;
+    width:25%;
 }
-header nav ul li a {
+header.t1 nav ul li a {
     color:#fff;
     font-size:14px;
 }
+
+header.t2 {
+    background:#FF96CD;
+    display:table;
+    width:100%;
+}
+header.t2 div.menu {
+    display:table-cell;
+    vertical-align:middle;
+}
+header.t2 div.menu a {
+    margin:0 0 0 14px;
+}
+header.t2 div.logo {
+    display:table-cell;
+    height:42px;
+    vertical-align:middle;
+}
+header.t2 div.logo a {
+    background:#cfc;
+    display:table-cell;
+    height:42px;
+    padding:0 12px;
+    vertical-align:middle;
+}
+header.t2 nav {
+    display:table-cell;
+    text-align:right;
+    vertical-align:middle;
+}
+header.t2 nav ul {
+}
+header.t2 nav ul li {
+    display:inline-block;
+    margin:4px 12px;
+    vertical-align:bottom;
+}
+header.t2 nav ul li a {
+    display:table-cell;
+    height:42px;
+    vertical-align:middle;
+}
+
+
+
 
 footer nav {
     margin:12px 0 24px 0;
 }
 footer nav ul {
-    list-style:none;
-    padding:0;
     margin:0 20px;
 }
 footer nav ul li {
@@ -113,15 +160,12 @@ footer p.copyright {
 }
 
 
-.logo img {
+.main-img img {
     width:100%;
     vertical-align:bottom;
 }
 
 ul.items {
-    list-style:none;
-    padding:0;
-    margin:0;
 }
 ul.items li {
     border-bottom:1px solid #ddd;

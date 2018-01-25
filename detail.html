@@ -102,10 +102,21 @@
 
                     <div class="right-box">
                         <div class="purchase">
-                            <div class="price-info">
-                                <span class="price">12,345円<span>
-                            </div>
-                            <div class="btn-cart"><a href="#">カートに追加する</a></div>
+                            <form onsubmit="return false;">
+                                <div class="price-info">
+                                    価格：<span class="price">12,345円<span>
+                                </div>
+                                <div class="purchase-option">
+                                    数量：
+                                    <select name="count">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="btn-cart"><a href="#">カートに追加する</a></div>
+                            </form>
                         </div>
 
                         <div class="sns">
