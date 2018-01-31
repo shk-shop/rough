@@ -196,6 +196,42 @@ ul.items div.img img {
 .price {
 }
 
+ul.items2 {
+    display:flex;
+    flex-wrap:wrap;
+}
+ul.items2 li {
+    width:50%;
+    margin:12px 0;
+}
+@media screen and (min-width:480px) {
+    ul.items2 li {
+        width:25%;
+    }
+}
+ul.items2 a {
+    color:#333;
+    font-size:12px;
+    font-weight:bold;
+}
+ul.items2 div.img {
+    text-align:center;
+}
+ul.items2 div.info {
+}
+ul.items2 div.img {
+    vertical-align:middle;
+}
+ul.items2 div.info {
+    padding:6px 12px;
+}
+ul.items2 div.img img {
+    margin:6px;
+    vertical-align:bottom;
+    width:90px;
+}
+
+
 .breadcrumb {
     padding:6px 12px;
     font-size:12px;
