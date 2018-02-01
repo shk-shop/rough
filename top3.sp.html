@@ -13,7 +13,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 </head>
 
-<body>
+<body class="open">
 <script>
 $(document).ready(function() {
     $('.carousel').slick({
@@ -23,11 +23,19 @@ $(document).ready(function() {
         slidesToShow:3,
         slidesToScroll:3,
     });
+
+    $('.btn-slide').click(function() {
+        $('body').addClass('open');
+    });
+    $('.ev-menu-close').click(function() {
+        $('body').removeClass('open');
+    })
 });
 </script>
+    <div class="overlay ev-menu-close"></div>
     <header class="t2">
         <div class="menu">
-            <a class="btn-slide">
+            <a class="mg btn-slide">
                 <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="width: 20px; height: 20px; opacity: 1;" xml:space="preserve">
                     <g>
                         <rect y="16" class="icon-menu" width="512" height="80" style="fill: rgb(255, 255, 255);"></rect>
@@ -36,11 +44,27 @@ $(document).ready(function() {
                     </g>
                 </svg>
             </a>
+            <nav class="slide-menu ev-slide-menu">
+                <h2>カテゴリ</h2>
+                <ul>
+                    <li><a href="list.html">all</a></li>
+                    <li><a href="list.html">tops</a></li>
+                    <li><a href="list.html">outer</a></li>
+                    <li><a href="list.html">bottoms</a></li>
+                    <li><a href="list.html">one piece</a></li>
+                    <li><a href="list.html">cardigan</a></li>
+                    <li><a href="list.html">set up</a></li>
+                    <li><a href="list.html">shoes</a></li>
+                    <li><a href="list.html">accessory</a></li>
+                    <li><a href="list.html">kids</a></li>
+                    <li><a href="list.html">dog</a></li>
+                    <li><a href="list.html">other</a></li>                </ul>
+            </nav>
         </div>
         <div class="logo">
             <a href="top.sp.html">SiteLogo</a>
         </div>
-        <nav>
+        <nav class="person">
             <ul>
                 <li>
                     <a href="#">
